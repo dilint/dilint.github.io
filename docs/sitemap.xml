@@ -2,10 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://github.com/dilint/dilint.github.io.git/about/</loc>
+    <lastmod>2023-09-20T11:15:49+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://github.com/dilint/dilint.github.io.git/</loc>
+    <lastmod>2023-09-20T11:15:49+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://github.com/dilint/dilint.github.io.git/posts/hello-world/</loc>
+    <lastmod>2023-09-20T11:15:46+08:00</lastmod>
+  </url><url>
+    <loc>https://github.com/dilint/dilint.github.io.git/posts/</loc>
+    <lastmod>2023-09-20T11:15:46+08:00</lastmod>
+  </url><url>
+    <loc>https://github.com/dilint/dilint.github.io.git/categories/</loc>
+  </url><url>
+    <loc>https://github.com/dilint/dilint.github.io.git/tags/</loc>
   </url>
 </urlset>
