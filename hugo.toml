@@ -1,6 +1,6 @@
 baseURL = 'https://dilint.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Wells Blog'
 theme = "m10c"
 publishDir = "docs"
 
@@ -22,14 +22,14 @@ publishDir = "docs"
     weight = 3
 
 [params]
-  author = "John Doe"
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  author = "Wells"
+  description = "Stay foolish, keep calm"
   menu_item_separator = " - "
   [[params.social]]
     icon = "github"
     name = "Github"
-    url = "https://github.com/gohugoio"
+    url = "https://github.com/dilint"
   [[params.social]]
     icon = "twitter"
     name = "Twitter"
-    url = "https://twitter.com/gohugoio"
+    url = "https://twitter.com/wells34830282"
