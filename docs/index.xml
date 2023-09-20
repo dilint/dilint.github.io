@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Wells Blog</title>
     <link>https://dilint.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Wells Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Sep 2023 13:21:45 +0800</lastBuildDate><atom:link href="https://dilint.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -28,12 +28,12 @@ Github page 联合 </description>
     </item>
     
     <item>
-      <title>Hello World</title>
-      <link>https://dilint.github.io/posts/hello-world/</link>
-      <pubDate>Wed, 20 Sep 2023 11:15:46 +0800</pubDate>
+      <title>About</title>
+      <link>https://dilint.github.io/about/</link>
+      <pubDate>Wed, 20 Sep 2023 11:15:49 +0800</pubDate>
       
-      <guid>https://dilint.github.io/posts/hello-world/</guid>
-      <description>fafsf</description>
+      <guid>https://dilint.github.io/about/</guid>
+      <description>Fighting for developing computer skills. </description>
     </item>
     
   </channel>
