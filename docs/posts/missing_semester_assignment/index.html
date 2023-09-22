@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Missing Semester Assignment // Wells Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wells" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Missing Semester Assignment"/>
+<meta name="twitter:description" content="Sheel Tools https://missing.csail.mit.edu/2020/shell-tools/
+Q1 Question Read man ls and write an ls command that lists files in the following manner
+Includes all files, including hidden files Sizes are listed in human readable format (e.g. 454M instead of 454279954) Files are ordered by recency Output is colorized A sample output would look like this
+drwxr-xr-x 5 user group 160 Jan 14 09:53 .-rw-r--r-- 1 user group 514 Jan 14 06:42 bar-rw-r--r-- 1 user group 106M Jan 13 12:12 foodrwx------&#43; 47 user group 1."/>
+
+    <meta property="og:title" content="Missing Semester Assignment" />
+<meta property="og:description" content="Sheel Tools https://missing.csail.mit.edu/2020/shell-tools/
+Q1 Question Read man ls and write an ls command that lists files in the following manner
+Includes all files, including hidden files Sizes are listed in human readable format (e.g. 454M instead of 454279954) Files are ordered by recency Output is colorized A sample output would look like this
+drwxr-xr-x 5 user group 160 Jan 14 09:53 .-rw-r--r-- 1 user group 514 Jan 14 06:42 bar-rw-r--r-- 1 user group 106M Jan 13 12:12 foodrwx------&#43; 47 user group 1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dilint.github.io/posts/missing_semester_assignment/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-22T16:53:36+08:00" />
+<meta property="article:modified_time" content="2023-09-22T16:53:36+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://dilint.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Wells" /></a>
+      <span class="app-header-title">Wells Blog</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Stay foolish, keep calm</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/dilint" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/wells34830282" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Missing Semester Assignment</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 22, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          11 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://dilint.github.io/tags/linux/">linux</a>
+              <a class="tag" href="https://dilint.github.io/tags/shell/">shell</a>
+              <a class="tag" href="https://dilint.github.io/tags/assignment/">assignment</a>
+              <a class="tag" href="https://dilint.github.io/tags/open-course/">open-course</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="sheel-tools">Sheel Tools</h1>
+<blockquote>
+<p><a href="https://missing.csail.mit.edu/2020/shell-tools/">https://missing.csail.mit.edu/2020/shell-tools/</a></p>
+</blockquote>
+<h2 id="q1">Q1</h2>
+<h3 id="question">Question</h3>
+<p>Read man ls and write an ls command that lists files in the following manner</p>
+<p>Includes all files, including hidden files
+Sizes are listed in human readable format (e.g. 454M instead of 454279954)
+Files are ordered by recency
+Output is colorized
+A sample output would look like this</p>
+<pre tabindex="0"><code class="language--rw-r--r--" data-lang="-rw-r--r--"> drwxr-xr-x   5 user group  160 Jan 14 09:53 .
+ -rw-r--r--   1 user group  514 Jan 14 06:42 bar
+ -rw-r--r--   1 user group 106M Jan 13 12:12 foo
+ drwx------+ 47 user group 1.5K Jan 12 18:08 ..
+</code></pre><h3 id="answer">Answer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -alh
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>fd | xargs -d <span style="color:#e6db74">&#34;\n&#34;</span> stat --printf <span style="color:#e6db74">&#34;%y %s %n\n&#34;</span>
+</span></span></code></pre></div><h2 id="q2">Q2</h2>
+<h3 id="question-1">Question</h3>
+<p>Write bash functions marco and polo that do the following. Whenever you execute marco the current working directory should be saved in some manner, then when you execute polo, no matter what directory you are in, polo should cd you back to the directory where you executed marco. For ease of debugging you can write the code in a file marco.sh and (re)load the definitions to your shell by executing source marco.sh.</p>
+<h3 id="answer-1">Answer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>marco<span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>	pwd &gt; /tmp/marco
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>polo<span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>	cd <span style="color:#66d9ef">$(</span>cat /tmp/marco<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="q3">Q3</h2>
+<h3 id="question-2">Question</h3>
+<p>Say you have a command that fails rarely. In order to debug it you need to capture its output but it can be time consuming to get a failure run. Write a bash script that runs the following script until it fails and captures its standard output and error streams to files and prints everything at the end. Bonus points if you can also report how many runs it took for the script to fail.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#75715e">#!/usr/bin/env bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> n<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span> RANDOM <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#66d9ef">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> n -eq <span style="color:#ae81ff">42</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Something went wrong&#34;</span>
+</span></span><span style="display:flex;"><span>    &gt;&amp;<span style="color:#ae81ff">2</span> echo <span style="color:#e6db74">&#34;The error was using magic numbers&#34;</span>
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> echo <span style="color:#e6db74">&#34;Everything went according to plan&#34;</span>
+</span></span></code></pre></div><h3 id="answer-2">Answer</h3>
+<p>solve.sh</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>num<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>flag<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;&#34;</span> &gt; output 
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;&#34;</span> &gt; error
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[[</span> flag -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">((</span> n++ <span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>	./a.sh 1&gt;&gt; output 2&gt;&gt; error
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> $? -ne <span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		flag<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo $n
+</span></span></code></pre></div><h2 id="q4">Q4</h2>
+<h3 id="question-3">Question</h3>
+<p>As we covered in the lecture find’s -exec can be very powerful for performing operations over the files we are searching for. However, what if we want to do something with all the files, like creating a zip file? As you have seen so far commands will take input from both arguments and STDIN. When piping commands, we are connecting STDOUT to STDIN, but some commands like tar take inputs from arguments. To bridge this disconnect there’s the xargs command which will execute a command using STDIN as arguments. For example ls | xargs rm will delete the files in the current directory.</p>
+<p>Your task is to write a command that recursively finds all HTML files in the folder and makes a zip with them. Note that your command should work even if the files have spaces (hint: check -d flag for xargs).</p>
+<p>If you’re on macOS, note that the default BSD find is different from the one included in GNU coreutils. You can use -print0 on find and the -0 flag on xargs. As a macOS user, you should be aware that command-line utilities shipped with macOS may differ from the GNU counterparts; you can install the GNU versions if you like by using brew.</p>
+<h3 id="answer-3">Answer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch foo<span style="color:#ae81ff">\ </span><span style="color:#f92672">{</span>a..z<span style="color:#f92672">}</span>.html
+</span></span><span style="display:flex;"><span>fd -t f .html | xargs -d <span style="color:#e6db74">&#34;\n&#34;</span> tar -czf target.zip
+</span></span><span style="display:flex;"><span>tar -tvf target.zip
+</span></span></code></pre></div><h2 id="q5">Q5</h2>
+<h3 id="question-4">Question</h3>
+<p>(Advanced) Write a command or script to recursively find the most recently modified file in a directory. More generally, can you list all files by recency?</p>
+<h3 id="answer-4">Answer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>flename<span style="color:#f92672">=</span>$1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fdfind -t f -p <span style="color:#e6db74">&#34;</span>$filename<span style="color:#e6db74">&#34;</span> | xargs -d <span style="color:#e6db74">&#34;\n&#34;</span> stat -c <span style="color:#e6db74">&#34;%y %n&#34;</span> | sort
+</span></span></code></pre></div><h1 id="version-control">Version Control</h1>
+<blockquote>
+<p><a href="https://missing.csail.mit.edu/2020/version-control/">课程地址</a> <br>
+<a href="https://learngitbranching.js.org/?locale=zh_CN">学习git_branch</a> <br>
+<a href="https://mit-6null-notes.book.triplez.cn/lec/06-version-control-git/">更好的答案</a></p>
+</blockquote>
+<h2 id="q1-1">Q1</h2>
+<h3 id="question-5">Question</h3>
+<p>If you don’t have any past experience with Git, either try reading the first couple chapters of <a href="https://git-scm.com/book/en/v2">Pro Git</a> or go through a tutorial like <a href="https://learngitbranching.js.org/">Learn Git Branching</a>. As you’re working through it, relate Git commands to the data model.</p>
+<h3 id="solution">Solution</h3>
+<p>略</p>
+<h2 id="q2-1">Q2</h2>
+<h3 id="question-6">Question</h3>
+<p>Clone the <a href="https://github.com/missing-semester/missing-semester">repository for the class website</a>.</p>
+<ol>
+<li>Explore the version history by visualizing it as a graph.</li>
+<li>Who was the last person to modify README.md? (Hint: use git log with an argument).</li>
+<li>What was the commit message associated with the last modification to the collections: line of _config.yml? (Hint: use git blame and git show).</li>
+</ol>
+<h3 id="solution-1">Solution</h3>
+<ol>
+<li><code>git log --all --graph --decorate --oneline</code></li>
+<li><code>git log README.md</code></li>
+<li><code>git blame _config.yml | grep collections ; git show a88b4eac</code></li>
+</ol>
+<h2 id="q3-1">Q3</h2>
+<h3 id="question-7">Question</h3>
+<p>One common mistake when learning Git is to commit large files that should not be managed by Git or adding sensitive information. Try adding a file to a repository, making some commits and then deleting that file from history (you may want to look at <a href="https://help.github.com/articles/removing-sensitive-data-from-a-repository/">this</a>).</p>
+<h3 id="solution-2">Solution</h3>
+<p><em><strong>Todo</strong></em>
+git-filter-repo不在ubuntu20.04lts资源包中
+可以尝试安装jar工具<a href="https://rtyley.github.io/bfg-repo-cleaner/">bfg</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ bfg --delete-files YOUR-FILE-WITH-SENSITIVE-DATA
+</span></span><span style="display:flex;"><span>$ bfg --replace-text passwords.txt
+</span></span><span style="display:flex;"><span>$ git push --force
+</span></span></code></pre></div><h2 id="q4-1">Q4</h2>
+<h3 id="question-8">Question</h3>
+<p>Clone some repository from GitHub, and modify one of its existing files. What happens when you do git stash? What do you see when running git log &ndash;all &ndash;oneline? Run git stash pop to undo what you did with git stash. In what scenario might this be useful?</p>
+<h3 id="answer-5">Answer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ echo <span style="color:#e6db74">&#39;Hello wordl&#39;</span> &gt; modify
+</span></span><span style="display:flex;"><span>$ git add modify
+</span></span><span style="display:flex;"><span>$ git stash
+</span></span><span style="display:flex;"><span>Saved working directory and index state WIP on main: 9e6bd59 Delete snow directory
+</span></span><span style="display:flex;"><span>$ git commit
+</span></span><span style="display:flex;"><span>On branch main
+</span></span><span style="display:flex;"><span>Your branch is up to date with <span style="color:#e6db74">&#39;origin/main&#39;</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nothing to commit, working tree clean
+</span></span><span style="display:flex;"><span>$ git stash pop
+</span></span><span style="display:flex;"><span>On branch main
+</span></span><span style="display:flex;"><span>Your branch is up to date with <span style="color:#e6db74">&#39;origin/main&#39;</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Changes to be committed:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>use <span style="color:#e6db74">&#34;git restore --staged &lt;file&gt;...&#34;</span> to unstage<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        new file:   modify
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Dropped refs/stash@<span style="color:#f92672">{</span>0<span style="color:#f92672">}</span> <span style="color:#f92672">(</span>7168746ee44d2e2d7dd8632d80862001ebba2af2<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>$ git commit -m <span style="color:#e6db74">&#39;test the function of &#34;git stash&#34;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>main fd35c4c<span style="color:#f92672">]</span> test the <span style="color:#66d9ef">function</span> of <span style="color:#e6db74">&#34;git stash&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span> file changed, <span style="color:#ae81ff">1</span> insertion<span style="color:#f92672">(</span>+<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> create mode <span style="color:#ae81ff">100644</span> modify
+</span></span><span style="display:flex;"><span>$ git log --oneline
+</span></span><span style="display:flex;"><span>fd35c4c <span style="color:#f92672">(</span>HEAD -&gt; main<span style="color:#f92672">)</span> test the <span style="color:#66d9ef">function</span> of <span style="color:#e6db74">&#34;git stash&#34;</span>
+</span></span></code></pre></div><p>用来将staging area中内容暂时放到堆栈中
+stash pop重新加入到stagin area</p>
+<h2 id="q5-1">Q5</h2>
+<h3 id="question-9">Question</h3>
+<p>Like many command line tools, Git provides a configuration file (or dotfile) called <code>~/.gitconfig</code>. Create an alias in <code>~/.gitconfig</code> so that when you run <code>git graph</code>, you get the output of <code>git log --all --graph --decorate --oneline</code>. Information about git aliases can be found <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias">here</a>.</p>
+<h3 id="answer-6">Answer</h3>
+<p>在~/.gitconfig中修改</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#f92672">[</span>alias<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>     graph <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;log --all --graph --decorate --oneline&#34;</span>
+</span></span></code></pre></div><p>获得结果</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git graph
+</span></span><span style="display:flex;"><span>* fd35c4c <span style="color:#f92672">(</span>HEAD -&gt; main<span style="color:#f92672">)</span> test the <span style="color:#66d9ef">function</span> of <span style="color:#e6db74">&#34;git stash&#34;</span>
+</span></span><span style="display:flex;"><span>* 9e6bd59 <span style="color:#f92672">(</span>origin/main, origin/HEAD<span style="color:#f92672">)</span> Delete snow directory
+</span></span></code></pre></div><h2 id="q6">Q6</h2>
+<h3 id="question-10">Question</h3>
+<p>You can define global ignore patterns in <code>~/.gitignore_global</code> after running <code>git config --global core.excludesfile ~/.gitignore_global. </code>Do this, and set up your global gitignore file to ignore OS-specific or editor-specific temporary files, like .<code>DS_Store</code>.</p>
+<h3 id="solution-3">Solution</h3>
+<p>设置全局ignore文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ echo <span style="color:#e6db74">&#34;.DS_Store&#34;</span> &gt;&gt; ~/.gitignore_global
+</span></span><span style="display:flex;"><span>$ git config --global core.excludesfile ~/.gitignore_global
+</span></span></code></pre></div><p>检查效果</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ touch .DS_Store
+</span></span><span style="display:flex;"><span>$ ls -a
+</span></span><span style="display:flex;"><span>.         ..        .DS_Store .git
+</span></span><span style="display:flex;"><span>$ git status                                                  
+</span></span><span style="display:flex;"><span>On branch main                                                                            
+</span></span><span style="display:flex;"><span>Your branch is ahead of <span style="color:#e6db74">&#39;origin/main&#39;</span> by <span style="color:#ae81ff">1</span> commit.                                             
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>use <span style="color:#e6db74">&#34;git push&#34;</span> to publish your local commits<span style="color:#f92672">)</span>                                                                                                                                          
+</span></span><span style="display:flex;"><span>nothing to commit, working tree clean
+</span></span></code></pre></div><h2 id="q7">Q7</h2>
+<h3 id="question-11">Question</h3>
+<p>Fork the <a href="https://github.com/missing-semester/missing-semester">repository for the class website</a>, find a typo or some other improvement you can make, and submit a pull request on GitHub (you may want to look at <a href="https://github.com/firstcontributions/first-contributions">this</a>).</p>
+<h3 id="solution-4">Solution</h3>
+<p>无</p>
+<h1 id="meta-programming">Meta Programming</h1>
+<blockquote>
+<p><a href="https://missing.csail.mit.edu/2020/metaprogramming/">课程地址</a>
+<a href="https://jsinkers.github.io/notes/notebooks/missing_class/08_metaprogramming.html#">参考</a></p>
+</blockquote>
+<h2 id="q1-2">Q1</h2>
+<h3 id="question-12">Question</h3>
+<p>Most makefiles provide a target called <code>clean</code>. This isn&rsquo;t intendedto produce a file called <code>clean</code>, but instead to clean up any files that can be re-built by make. Think of it as a way to &ldquo;undo&rdquo; all of the build steps. Implement a <code>clean</code> target for the <code>paper.pdf</code> <code>Makefile</code> above. You will have to make the target <a href="https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html">phon</a>. You may find the <a href="https://git-scm.com/docs/git-ls-files"><code>git ls-files</code></a> subcommand useful. A number of other very common make targets are listed <a href="https://www.gnu.org/software/make/manual/html_node/Standard-Targets.html#Standard-Targets">here</a>.</p>
+<h3 id="solution-5">Solution</h3>
+<p><code>Makefile</code>文件中加入</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.PHONY: clean
+</span></span><span style="display:flex;"><span>clean:
+</span></span><span style="display:flex;"><span>	git ls-files -o | xargs -d <span style="color:#e6db74">&#39;\n&#39;</span> rm
+</span></span></code></pre></div><hr>
+<h2 id="q2-2">Q2</h2>
+<h3 id="question-13">Question</h3>
+<p>Take a look at the various ways to specify version requirements for dependencies in <a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html">Rust&rsquo;s build system</a>. Most package repositories support similar syntax. For each one (caret, tilde, wildcard, comparison, and multiple), try to come up with a use-case in which that particular kind of requirement makes sense.</p>
+<h3 id="solution-6">Solution</h3>
+<p><strong>^:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ^1.2.3 :<span style="color:#f92672">=</span> 1.2.3
+</span></span></code></pre></div><p><strong>~:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>~1.2.3  :<span style="color:#f92672">=</span> &gt;<span style="color:#f92672">=</span>1.2.3, &lt;1.3.0
+</span></span><span style="display:flex;"><span>~1.2    :<span style="color:#f92672">=</span> &gt;<span style="color:#f92672">=</span>1.2.0, &lt;1.3.0
+</span></span><span style="display:flex;"><span>~1      :<span style="color:#f92672">=</span> &gt;<span style="color:#f92672">=</span>1.0.0, &lt;2.0.0
+</span></span></code></pre></div><p><strong>*:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*     :<span style="color:#f92672">=</span> &gt;<span style="color:#f92672">=</span>0.0.0
+</span></span><span style="display:flex;"><span>1.*   :<span style="color:#f92672">=</span> &gt;<span style="color:#f92672">=</span>1.0.0, &lt;2.0.0
+</span></span><span style="display:flex;"><span>1.2.* :<span style="color:#f92672">=</span> &gt;<span style="color:#f92672">=</span>1.2.0, &lt;1.3.0
+</span></span></code></pre></div><p><strong>&lt;, &lt;=, &gt;, &gt;=, =:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;<span style="color:#f92672">=</span> 1.2.0
+</span></span><span style="display:flex;"><span>&gt; <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>&lt; 2
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span> 1.2.3
+</span></span></code></pre></div><p><strong>multiple requirements</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;<span style="color:#f92672">=</span> 1.2, &lt; 1.5.
+</span></span></code></pre></div><hr>
+<h2 id="q3-2">Q3</h2>
+<h3 id="question-14">Question</h3>
+<p>Git can act as a simple CI system(continuous integration system) all by itself. In <code>.git/hooks</code> inside any git repository, you will find (currently inactive) files that are run as scripts when a particular action happens. Write a <a href="https://git-scm.com/docs/githooks#_pre_commit"><code>pre-commit</code></a> hook that runs <code>make paper.pdf</code> and refuses the commit if the <code>make</code> command fails. This should prevent any commit from having an unbuildable version of the paper.</p>
+<h3 id="solution-7">Solution</h3>
+<p>pre-commit是在执行<code>git commit</code>时被触发的脚本，用于确认提交是否成功，如果失败应该返回非0值则提交无法成功</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pre-commit script to prevent commit if the make fails</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Redirect output to stderr.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>exec 1&gt;&amp;<span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> make
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;Make successful&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>        cat <span style="color:#e6db74">&lt;&lt; EOF
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Error: could not make pdf
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><hr>
+<h2 id="q4-2">Q4</h2>
+<h3 id="question-15">Question</h3>
+<p>Set up a simple auto-published page using <a href="https://pages.github.com/">GitHubPages</a>.Add a [GitHub Action(https://github.com/features/actions) to therepository to run <code>shellcheck</code> on any shell files in that repository (here is <a href="https://github.com/marketplace/actions/shellcheck">one way to do it</a>). Check that it works!</p>
+<h3 id="solution-8">Solution</h3>
+<p>注意yml文件对空格和tab极度敏感
+ci.yml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># This is a basic workflow to help you get started with Actions</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name: CI
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Controls when the workflow will run</span>
+</span></span><span style="display:flex;"><span>on:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Triggers the workflow on push or pull request events but only for the main branch</span>
+</span></span><span style="display:flex;"><span>  push:
+</span></span><span style="display:flex;"><span>    branches: <span style="color:#f92672">[</span> main <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  pull_request:
+</span></span><span style="display:flex;"><span>    branches: <span style="color:#f92672">[</span> main <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Allows you to run this workflow manually from the Actions tab</span>
+</span></span><span style="display:flex;"><span>  workflow_dispatch:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span>
+</span></span><span style="display:flex;"><span>jobs:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># This workflow contains a single job called &#34;build&#34;</span>
+</span></span><span style="display:flex;"><span>  build:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># The type of runner that the job will run on</span>
+</span></span><span style="display:flex;"><span>    runs-on: ubuntu-latest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Steps represent a sequence of tasks that will be executed as part of the job</span>
+</span></span><span style="display:flex;"><span>    steps:
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span>
+</span></span><span style="display:flex;"><span>      - uses: actions/checkout@v3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># Runs a single command using the runners shell</span>
+</span></span><span style="display:flex;"><span>      - name: Run a one-line script
+</span></span><span style="display:flex;"><span>        run: echo Hello, world!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># Runs a set of commands using the runners shell</span>
+</span></span><span style="display:flex;"><span>      - name: Run a multi-line script
+</span></span><span style="display:flex;"><span>        run: |
+</span></span><span style="display:flex;"><span>          echo Add other actions to build,
+</span></span><span style="display:flex;"><span>          echo test, and deploy your project.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - name: ShellCheck
+</span></span><span style="display:flex;"><span>        uses: ludeeus/action-shellcheck@master
+</span></span></code></pre></div><hr>
+<h2 id="q5-2">Q5</h2>
+<h3 id="question-16">Question</h3>
+<p><a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions">Build your own</a> GitHub action to run <a href="http://proselint.com/"><code>proselint</code></a> or <a href="https://github.com/btford/write-good"><code>write-good</code></a> on all the <code>.md</code> files in the repository. Enable it in your repository, and check that it works by filing a pull request with a typo in it.</p>
+<h3 id="solution-9">Solution</h3>
+<p>给的两个proselint和write-good是两个命令行语法检查工具
+可能需要现在docker仓库配置好环境 然后再使用fd .md得到的所有结果进行指令的执行</p>
+<h1 id="security-and-cryptography">Security and Cryptography</h1>
+<blockquote>
+<p><a href="https://missing.csail.mit.edu/2020/security/">课程地址</a></p>
+</blockquote>
+<p>@[TOC]</p>
+<h2 id="q1-3">Q1</h2>
+<h3 id="question-17">Question</h3>
+<p><strong>Entropy</strong></p>
+<ol>
+<li>Suppose a password is chosen as a concatenation of four lower-case dictionary words, where each word is selected uniformly at random from a dictionary of size 100,000. An example of such a password is <code>correcthorsebatterystaple</code>. How many bits of entropy does this have?</li>
+<li>Consider an alternative scheme where a password is chosen as a sequence of 8 random alphanumeric characters (including both lower-case and upper-case letters). An example is <code>rg8Ql34g</code>. How many bits of entropy does this have?</li>
+<li>Which is the stronger password?</li>
+<li>Suppose an attacker can try guessing 10,000 passwords per second. On average, how long will it take to break each of the passwords?</li>
+</ol>
+<h3 id="solution-10">Solution</h3>
+<ol>
+<li>$log_2(100000^4)=66.4385 \approx 67$</li>
+<li>$log_2(62^8)=47.6335 \approx 48$</li>
+<li>the first one</li>
+<li>$100000^4 \div 10000=10^{16}$  and $62^8 \div 10000 \approx 21834010558$
+前者破译大概需要317097919年，后者破译大概要693年。</li>
+</ol>
+<h2 id="q2-3">Q2</h2>
+<h3 id="question-18">Question</h3>
+<p><strong>Cryptographic hash functions.</strong> Download a Debian image from a <a href="https://www.debian.org/CD/http-ftp/">mirror</a> (e.g. <a href="http://debian.xfree.com.ar/debian-cd/current/amd64/iso-cd/">from this Argentinean mirror</a>). Cross-check the hash (e.g. using the <code>sha256sum</code> command) with the hash retrieved from the official Debian site (e.g. <a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/SHA256SUMS">this file</a> hosted at <code>debian.org</code>, if you&rsquo;ve downloaded the linked file from the Argentinean mirror).</p>
+<h3 id="solution-11">Solution</h3>
+<p>从mirror中下载得到系统镜像iso文件，对比官网中的sha256序列。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ wget http://debian.xfree.com.ar/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso
+</span></span><span style="display:flex;"><span>$ sha256sum debian-11.3.0-amd64-netinst.iso
+</span></span><span style="display:flex;"><span>7892981e1da216e79fb3a1536ce5ebab157afdd20048fe458f2ae34fbc26c19b  debian-11.3.0-amd64-netinst.iso
+</span></span></code></pre></div><h2 id="q3-3">Q3</h2>
+<h3 id="question-19">Question</h3>
+<p><strong>Symmetric cryptography.</strong> Encrypt a file with AES encryption, using <a href="https://www.openssl.org/">OpenSSL</a>: <code>openssl aes-256-cbc -salt -in {input filename} -out {output filename}</code>. Look at the contents using <code>cat</code> or <code>hexdump</code>. Decrypt it with <code>openssl aes-256-cbc -d -in {input filename} -out   {output filename}</code> and confirm that the contents match the original using <code>cmp</code>.</p>
+<h3 id="solution-12">Solution</h3>
+<h2 id="略">略</h2>
+<h2 id="q4-3">Q4</h2>
+<h3 id="question-20">Question</h3>
+<ol>
+<li><strong>Asymmetric cryptography.</strong>
+<ol>
+<li>Set up <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2">SSH keys</a> on a computer you have access to (not Athena, because Kerberos interacts weirdly with SSH keys). Make sure your private key is encrypted with a passphrase, so it is protected at rest.</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages">Set up GPG</a></li>
+<li>Send Anish an encrypted email (<a href="https://keybase.io/anish">public key</a>).</li>
+<li>Sign a Git commit with <code>git commit -S</code> or create a signed Git tag with <code>git tag -s</code>. Verify the signature on the commit with <code>git show       --show-signature</code> or on the tag with <code>git tag -v</code>.</li>
+</ol>
+</li>
+</ol>
+<h3 id="solution-13">Solution</h3>
+<p>1.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ssh-keygen -t ed25519
+</span></span><span style="display:flex;"><span>Generating public/private ed25519 key pair.
+</span></span><span style="display:flex;"><span>Enter file in which to save the key <span style="color:#f92672">(</span>/home/wells/.ssh/id_ed25519<span style="color:#f92672">)</span>: id_ed25519
+</span></span><span style="display:flex;"><span>Enter passphrase <span style="color:#f92672">(</span>empty <span style="color:#66d9ef">for</span> no passphrase<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>Enter same passphrase again:
+</span></span><span style="display:flex;"><span>Your identification has been saved in id_ed25519
+</span></span><span style="display:flex;"><span>Your public key has been saved in id_ed25519.pub
+</span></span><span style="display:flex;"><span>The key fingerprint is:
+</span></span><span style="display:flex;"><span>SHA256:bi9RakjjCTXtbyaSk/HOKXruve/IhU9VsCnFNjOJQYY wells@HUIPU-Wells
+</span></span><span style="display:flex;"><span>The key<span style="color:#960050;background-color:#1e0010">&#39;</span>s randomart image is:
+</span></span><span style="display:flex;"><span>+--<span style="color:#f92672">[</span>ED25519 256<span style="color:#f92672">]</span>--+
+</span></span><span style="display:flex;"><span>|       . o++o.   |
+</span></span><span style="display:flex;"><span>|      o E...B+   |
+</span></span><span style="display:flex;"><span>|     . o  ..o+.  |
+</span></span><span style="display:flex;"><span>|    . + . .. .   |
+</span></span><span style="display:flex;"><span>|     + OS+  .    |
+</span></span><span style="display:flex;"><span>|      O.*.+.     |
+</span></span><span style="display:flex;"><span>|       *+*o      |
+</span></span><span style="display:flex;"><span>|      o<span style="color:#f92672">+=</span>*       |
+</span></span><span style="display:flex;"><span>|    .<span style="color:#f92672">=</span>o.<span style="color:#f92672">===</span>      |
+</span></span><span style="display:flex;"><span>+----<span style="color:#f92672">[</span>SHA256<span style="color:#f92672">]</span>-----+
+</span></span></code></pre></div><p>另可以使用ssh-copy-id向客户端发送公钥，例如</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-copy-id git@github.com
+</span></span></code></pre></div><p>2.TODO</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

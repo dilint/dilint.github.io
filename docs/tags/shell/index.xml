@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on Wells Blog</title>
+    <link>https://dilint.github.io/tags/shell/</link>
+    <description>Recent content in shell on Wells Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2023 16:53:36 +0800</lastBuildDate><atom:link href="https://dilint.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Missing Semester Assignment</title>
+      <link>https://dilint.github.io/posts/missing_semester_assignment/</link>
+      <pubDate>Fri, 22 Sep 2023 16:53:36 +0800</pubDate>
+      
+      <guid>https://dilint.github.io/posts/missing_semester_assignment/</guid>
+      <description>Sheel Tools https://missing.csail.mit.edu/2020/shell-tools/
+Q1 Question Read man ls and write an ls command that lists files in the following manner
+Includes all files, including hidden files Sizes are listed in human readable format (e.g. 454M instead of 454279954) Files are ordered by recency Output is colorized A sample output would look like this
+drwxr-xr-x 5 user group 160 Jan 14 09:53 .-rw-r--r-- 1 user group 514 Jan 14 06:42 bar-rw-r--r-- 1 user group 106M Jan 13 12:12 foodrwx------+ 47 user group 1.</description>
+    </item>
+    
+  </channel>
+</rss>

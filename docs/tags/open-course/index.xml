@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Wells Blog</title>
-    <link>https://dilint.github.io/posts/</link>
-    <description>Recent content in Posts on Wells Blog</description>
+    <title>open-course on Wells Blog</title>
+    <link>https://dilint.github.io/tags/open-course/</link>
+    <description>Recent content in open-course on Wells Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 17:26:42 +0800</lastBuildDate><atom:link href="https://dilint.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Sep 2023 17:26:42 +0800</lastBuildDate><atom:link href="https://dilint.github.io/tags/open-course/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSAPP LAB</title>
       <link>https://dilint.github.io/posts/csapp_lab/</link>
@@ -30,26 +30,6 @@
 Q1 Question Read man ls and write an ls command that lists files in the following manner
 Includes all files, including hidden files Sizes are listed in human readable format (e.g. 454M instead of 454279954) Files are ordered by recency Output is colorized A sample output would look like this
 drwxr-xr-x 5 user group 160 Jan 14 09:53 .-rw-r--r-- 1 user group 514 Jan 14 06:42 bar-rw-r--r-- 1 user group 106M Jan 13 12:12 foodrwx------+ 47 user group 1.</description>
-    </item>
-    
-    <item>
-      <title>Set up blog with Hugo and Github page</title>
-      <link>https://dilint.github.io/posts/set_up_blog/</link>
-      <pubDate>Wed, 20 Sep 2023 13:21:45 +0800</pubDate>
-      
-      <guid>https://dilint.github.io/posts/set_up_blog/</guid>
-      <description>系统：win11
-参考内容：
-hugo + GitHub Page(win11)
-hugo + GitHub Page(mac) &amp;ndash;codesheep
-win10结尾crlf是否替代为linux结尾lf
-原理 Hugo Hugo 是一个用 Go 编写的静态网站生成器
-Hugo把用户提供的数据文件、i18n 包、配置、布局模板、静态文件，以及用 Markdown 编写的内容，处理并生成一个完整的静态网站。较出色的功能包括多语言支持、图像处理、定制输出格式、短代码等等。而 Hugo 的“嵌套分部”(Nested sections) 功能则可以隔离不同类型的内容，例如一个同时包含博客和播客的网站。
-&amp;mdash;&amp;mdash;&amp;ndash;wikipedia
-个人使用上，
-就是把markdown转换为一个html。
-把各个html安装目录组织成目录html。
-Github page 联合 </description>
     </item>
     
   </channel>

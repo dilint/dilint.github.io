@@ -6,7 +6,32 @@
     <description>Recent content on Wells Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Sep 2023 13:21:45 +0800</lastBuildDate><atom:link href="https://dilint.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Sep 2023 17:26:42 +0800</lastBuildDate><atom:link href="https://dilint.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSAPP LAB</title>
+      <link>https://dilint.github.io/posts/csapp_lab/</link>
+      <pubDate>Fri, 22 Sep 2023 17:26:42 +0800</pubDate>
+      
+      <guid>https://dilint.github.io/posts/csapp_lab/</guid>
+      <description>DataLab - howmanybits 题目 用有限的运算符（逻辑运算、移位运算等）实现功能：表示输入x所需要的最少bit位数。例：f(12)=5，f(-1)=1。
+/*howManyBits - return the minimum number of bits required to represent x in tow&amp;#39;s complement * Examples: howManyBits(12) = 5 * howManyBits(296) = 10 * howManyBits(-5) = 4 * howManyBits(0) = 1 * howManyBits(0x80000000) = 32 * Legal ops: ! ~ &amp;amp; ^ | + &amp;lt;&amp;lt; &amp;gt;&amp;gt; * Max ops: 90 */ int howManyBits(int x){ } 分析 可能有更好的方法，本方法仅为一种解决方案。 首先分为补码 正负分析，然后考虑边界情况。
+一般情况分析 先用变量minus来记录补码的正负，int类型共有32位，如果第31位为0说明是非负，否则为负数。
+非负情况：当补码为非负时，需要找出数中从大到小第一个为1的位置pos(0-31)。再添加上一位符号位即可。（由于索引范围为0-31，而个数范围为1-32，最后pos需要+1，最高位1在第pos位指的是共有(pos+1)bits）。
+负数情况：当补码为负时，将x转换为相反数-x(tmin=-0x80000000有越界风险需要另外讨论)，同样寻找相反数|x|中从大到小第一个为1的位置pos，观察例子f(-5)的绝对值2进制形式为101，3个bits但结果为4需要添加1；f(-1)绝对值2进制形式为1，1个bit结果为1不需要添加1。思考这是由于n位补码的表示范围为$[-2^{ n-1},2^{n-1}-1]$，补码中负数与绝对值的无符号代数关系为： $$x+|x|=2^n$$①当$|x|=2^{pos}$时，假设$n=pos+1$，x刚好为能表达的最小数，$x=2^{pos}$,$x+|x|=2^{pos+1}$式子刚好满足； ②而当$|x|&amp;gt;2^{pos}$，根据补码的特性可知在x中在pos之前的位拥有一个符号位1，则假设$n=pos+1$，$x+|x|&amp;gt;2^{pos+1}=2^{n}$不成立，所以假设$n=pos+2$，pos+1存在一个符号位，$x+|x|=2^{n}$，则该补码的表示范围在$[-2^{ pos+1},2^{pos+1}-1]$，$|x|&amp;lt;2^{pos+1}，x&amp;gt;-2^{pos+1}$在范围内，所以可以表示； 使用变量flag对①和②情况进行区分。</description>
+    </item>
+    
+    <item>
+      <title>Missing Semester Assignment</title>
+      <link>https://dilint.github.io/posts/missing_semester_assignment/</link>
+      <pubDate>Fri, 22 Sep 2023 16:53:36 +0800</pubDate>
+      
+      <guid>https://dilint.github.io/posts/missing_semester_assignment/</guid>
+      <description>Sheel Tools https://missing.csail.mit.edu/2020/shell-tools/
+Q1 Question Read man ls and write an ls command that lists files in the following manner
+Includes all files, including hidden files Sizes are listed in human readable format (e.g. 454M instead of 454279954) Files are ordered by recency Output is colorized A sample output would look like this
+drwxr-xr-x 5 user group 160 Jan 14 09:53 .-rw-r--r-- 1 user group 514 Jan 14 06:42 bar-rw-r--r-- 1 user group 106M Jan 13 12:12 foodrwx------+ 47 user group 1.</description>
+    </item>
+    
     <item>
       <title>Set up blog with Hugo and Github page</title>
       <link>https://dilint.github.io/posts/set_up_blog/</link>

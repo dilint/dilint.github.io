@@ -2,20 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dilint.github.io/posts/</loc>
-    <lastmod>2023-09-20T13:21:45+08:00</lastmod>
+    <loc>https://dilint.github.io/tags/assignment/</loc>
+    <lastmod>2023-09-22T17:26:42+08:00</lastmod>
   </url><url>
-    <loc>https://dilint.github.io/posts/set_up_blog/</loc>
-    <lastmod>2023-09-20T13:21:45+08:00</lastmod>
+    <loc>https://dilint.github.io/posts/csapp_lab/</loc>
+    <lastmod>2023-09-22T17:26:42+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/tags/open-course/</loc>
+    <lastmod>2023-09-22T17:26:42+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/posts/</loc>
+    <lastmod>2023-09-22T17:26:42+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/tags/</loc>
+    <lastmod>2023-09-22T17:26:42+08:00</lastmod>
   </url><url>
     <loc>https://dilint.github.io/</loc>
+    <lastmod>2023-09-22T17:26:42+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/tags/linux/</loc>
+    <lastmod>2023-09-22T16:53:36+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/posts/missing_semester_assignment/</loc>
+    <lastmod>2023-09-22T16:53:36+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/tags/shell/</loc>
+    <lastmod>2023-09-22T16:53:36+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/posts/set_up_blog/</loc>
     <lastmod>2023-09-20T13:21:45+08:00</lastmod>
   </url><url>
     <loc>https://dilint.github.io/about/</loc>
     <lastmod>2023-09-20T11:15:49+08:00</lastmod>
   </url><url>
     <loc>https://dilint.github.io/categories/</loc>
-  </url><url>
-    <loc>https://dilint.github.io/tags/</loc>
   </url>
 </urlset>
