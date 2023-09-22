@@ -2,7 +2,7 @@
 title = 'Set Up Blog'
 date = 2023-09-20T13:21:45+08:00
 draft = false
-tags = ['hugo', 'github']
+tags = ['hugo', 'github', 'install']
 +++
 
 
