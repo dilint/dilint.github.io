@@ -3,6 +3,7 @@ title = 'CSAPP LAB'
 date = 2023-09-22T17:26:42+08:00
 draft = false
 tags = ['assignment', 'open-course']
+math = true
 +++
 
 # DataLab - howmanybits

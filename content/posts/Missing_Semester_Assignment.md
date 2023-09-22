@@ -3,6 +3,7 @@ title = 'Missing Semester Assignment'
 date = 2023-09-22T16:53:36+08:00
 draft = false
 tags = ['linux', 'shell', 'assignment', 'open-course']
+math = true
 +++
 
 
@@ -406,10 +407,10 @@ jobs:
 4. Suppose an attacker can try guessing 10,000 passwords per second. On average, how long will it take to break each of the passwords?
 
 ### Solution
-1.  $log_2(100000^4)=66.4385 \approx 67$
-2. $log_2(62^8)=47.6335 \approx 48$
+1. $$ log_2(100000^4)=66.4385 \approx 67 $$
+2. $$ log_2(62^8)=47.6335 \approx 48 $$
 3. the first one
-4. $100000^4 \div 10000=10^{16}$  and $62^8 \div 10000 \approx 21834010558$
+4. $$100000^4 \div 10000=10^{16}$$ $$62^8 \div 10000 \approx 21834010558$$
 前者破译大概需要317097919年，后者破译大概要693年。
 
 

@@ -43,5 +43,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>github</title>
+      <link>https://dilint.github.io/tags/github/</link>
+      <pubDate>Wed, 20 Sep 2023 13:21:45 +0800</pubDate>
+      
+      <guid>https://dilint.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://dilint.github.io/tags/hugo/</link>
+      <pubDate>Wed, 20 Sep 2023 13:21:45 +0800</pubDate>
+      
+      <guid>https://dilint.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

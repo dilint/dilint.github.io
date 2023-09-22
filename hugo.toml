@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'Wells Blog'
 theme = "m10c"
 publishDir = "docs"
-avatar = "resources/imgs/avatar.jpg"
 
 [menu]
   [[menu.main]]
