@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dilint.github.io/posts/life_imgs/</loc>
+    <lastmod>2024-01-07T23:24:03+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/posts/</loc>
+    <lastmod>2024-01-07T23:24:03+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/</loc>
+    <lastmod>2024-01-07T23:24:03+08:00</lastmod>
+  </url><url>
     <loc>https://dilint.github.io/tags/algorithm/</loc>
     <lastmod>2024-01-07T17:57:04+08:00</lastmod>
   </url><url>
@@ -11,13 +20,7 @@
     <loc>https://dilint.github.io/posts/leetcode_array/</loc>
     <lastmod>2024-01-07T17:57:04+08:00</lastmod>
   </url><url>
-    <loc>https://dilint.github.io/posts/</loc>
-    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
-  </url><url>
     <loc>https://dilint.github.io/tags/</loc>
-    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
-  </url><url>
-    <loc>https://dilint.github.io/</loc>
     <lastmod>2024-01-07T17:57:04+08:00</lastmod>
   </url><url>
     <loc>https://dilint.github.io/tags/docker/</loc>
