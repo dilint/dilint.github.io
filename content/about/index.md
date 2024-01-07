@@ -5,4 +5,4 @@ draft = false
 +++
 
 # Fighting for developing computer skills.
-![](resources/imgs/about-img.jpg)
+![123](/about-img.jpg)
