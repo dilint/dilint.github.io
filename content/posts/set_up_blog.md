@@ -9,15 +9,15 @@ tags = ['hugo', 'github', 'install']
 **系统：win11**
 
 **参考内容：**
-- [hugo + GitHub Page(win11)](https://www.jianshu.com/p/cc73559fea2c)
-- [hugo + GitHub Page(mac) --codesheep](https://www.bilibili.com/video/BV1q4411i7gL/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=76501560d60e3e64d15a0b344c7d1028)
-- [win10结尾crlf是否替代为linux结尾lf](https://qing.shuncs.com/post/tech/hugo/)
-- [添加数学公式](https://note.qidong.name/2018/03/hugo-mathjax/)
-- [阿里云图床设置](https://blog.csdn.net/muxuen/article/details/122441469)
+1. [hugo + GitHub Page(win11)](https://www.jianshu.com/p/cc73559fea2c)
+1. [hugo + GitHub Page(mac) --codesheep](https://www.bilibili.com/video/BV1q4411i7gL/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=76501560d60e3e64d15a0b344c7d1028)
+1. [win10结尾crlf是否替代为linux结尾lf](https://qing.shuncs.com/post/tech/hugo/)
+1. [添加数学公式](https://note.qidong.name/2018/03/hugo-mathjax/)
+1. [阿里云图床设置](https://blog.csdn.net/muxuen/article/details/122441469)
 ## 目录
-1. [原理](#原理)
-2. [日常使用](#日常使用)
-3. [参数说明](#参数说明)
+- [原理](#原理)
+- [日常使用](#日常使用)
+- [参数说明](#参数说明)
 
 ## 原理
 
