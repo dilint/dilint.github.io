@@ -15,17 +15,12 @@
       <guid>https://dilint.github.io/posts/set_up_blog/</guid>
       <description>系统：win11
 参考内容：
-hugo + GitHub Page(win11)
-hugo + GitHub Page(mac) &amp;ndash;codesheep
-win10结尾crlf是否替代为linux结尾lf
-添加数学公式
-原理 Hugo Hugo 是一个用 Go 编写的静态网站生成器
+hugo + GitHub Page(win11) hugo + GitHub Page(mac) &amp;ndash;codesheep win10结尾crlf是否替代为linux结尾lf 添加数学公式 目录 原理 日常使用 参数说明 原理 Hugo Hugo 是一个用 Go 编写的静态网站生成器
 Hugo把用户提供的数据文件、i18n 包、配置、布局模板、静态文件，以及用 Markdown 编写的内容，处理并生成一个完整的静态网站。较出色的功能包括多语言支持、图像处理、定制输出格式、短代码等等。而 Hugo 的“嵌套分部”(Nested sections) 功能则可以隔离不同类型的内容，例如一个同时包含博客和播客的网站。
 &amp;mdash;&amp;mdash;&amp;ndash;wikipedia
-个人使用上，
-就是把markdown转换为一个html。
-把各个html安装目录组织成目录html。
-Github page 联合 </description>
+个人使用上，就是把markdown转换为一个html。把各个html安装目录组织成目录html。
+Github page Github page会把目录下的html以静态页面的方式显示出来，在这个应用场景下我们通过hugo框架将markdown转换为html，并生成相应的目录结构，所有生成的html在docs目录下，在github repository的settings -&amp;gt; Pages中，把GitHub Pages Source改为docs目录，点击save保存即可。
+日常使用 根目录执行 hugo new &amp;#34;posts/hello.md&amp;#34; hugo new &amp;#34;about/_index.md&amp;#34; 本地运行 本地打开http://localhost:1313/,其中-D参数表示看到文件中&amp;amp;draft=true&amp;amp;的内容 hugo server -D 生成发布目录 hugo -t m10c 发布到github git add . git commit -m &amp;#34;...&amp;#34; git push 参数说明 draft : 是否是草稿，默认是true，草稿在发布时不会显示出来，可以通过加上hugo server -D参数来显示草稿 math: 是否支持数学公式，默认是false tags: 标签，多个标签之间用逗号分隔 </description>
     </item>
     
   </channel>
