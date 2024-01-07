@@ -21,7 +21,7 @@
 阿里云仓库使用 仓库地址
 pull push
 命令 入门视频 3入门文档 详细介绍 docker-compose实例 删除容器
-运行 docker run -p 8000:8000 -t 进入终端 $ sudo docker ps $ sudo docker exec -it 775c7c9ee1e1 /bin/bash 后续使用遇到的问题 命令 docker ps 查看当前运行中的容器docker images 查看镜像列表docker rm container-id 删除指定 id 的容器docker stop/start container-id 停止/启动指定 id 的容器docker rmi image-id 删除指定 id 的镜像docker volume ls 查看 volume 列表docker network ls 查看网络列表sudo docker exec -it container-id /bin/bash 进入容器 Mysql 设置密码 Mysql 常用命令</description>
+运行 docker run -p 8000:8000 -t 进入终端 $ sudo docker ps $ sudo docker exec -it 775c7c9ee1e1 /bin/bash 后续使用遇到的问题 命令 docker ps 查看当前运行中的容器 docker images 查看镜像列表 docker rm container-id 删除指定 id 的容器 docker stop/start container-id 停止/启动指定 id 的容器 docker rmi image-id 删除指定 id 的镜像 docker volume ls 查看 volume 列表 docker network ls 查看网络列表 sudo docker exec -it container-id /bin/bash 进入容器 Mysql 设置密码 Mysql 常用命令</description>
     </item>
     
     <item>
