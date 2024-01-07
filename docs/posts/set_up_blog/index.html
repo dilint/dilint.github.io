@@ -8,39 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Wells" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    
 
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Set Up Blog"/>
 <meta name="twitter:description" content="系统：win11
 参考内容：
-hugo &#43; GitHub Page(win11)
-hugo &#43; GitHub Page(mac) &ndash;codesheep
-win10结尾crlf是否替代为linux结尾lf
-添加数学公式
-原理 Hugo Hugo 是一个用 Go 编写的静态网站生成器
+hugo &#43; GitHub Page(win11) hugo &#43; GitHub Page(mac) &ndash;codesheep win10结尾crlf是否替代为linux结尾lf 添加数学公式 目录 原理 日常使用 参数说明 原理 Hugo Hugo 是一个用 Go 编写的静态网站生成器
 Hugo把用户提供的数据文件、i18n 包、配置、布局模板、静态文件，以及用 Markdown 编写的内容，处理并生成一个完整的静态网站。较出色的功能包括多语言支持、图像处理、定制输出格式、短代码等等。而 Hugo 的“嵌套分部”(Nested sections) 功能则可以隔离不同类型的内容，例如一个同时包含博客和播客的网站。
 &mdash;&mdash;&ndash;wikipedia
-个人使用上，
-就是把markdown转换为一个html。
-把各个html安装目录组织成目录html。
-Github page 联合 "/>
+个人使用上，就是把markdown转换为一个html。把各个html安装目录组织成目录html。
+Github page Github page会把目录下的html以静态页面的方式显示出来，在这个应用场景下我们通过hugo框架将markdown转换为html，并生成相应的目录结构，所有生成的html在docs目录下，在github repository的settings -&gt; Pages中，把GitHub Pages Source改为docs目录，点击save保存即可。
+日常使用 根目录执行 hugo new &#34;posts/hello.md&#34; hugo new &#34;about/_index.md&#34; 本地运行 本地打开http://localhost:1313/,其中-D参数表示看到文件中&amp;draft=true&amp;的内容 hugo server -D 生成发布目录 hugo -t m10c 发布到github git add . git commit -m &#34;...&#34; git push 参数说明 draft : 是否是草稿，默认是true，草稿在发布时不会显示出来，可以通过加上hugo server -D参数来显示草稿 math: 是否支持数学公式，默认是false tags: 标签，多个标签之间用逗号分隔 "/>
 
     <meta property="og:title" content="Set Up Blog" />
 <meta property="og:description" content="系统：win11
 参考内容：
-hugo &#43; GitHub Page(win11)
-hugo &#43; GitHub Page(mac) &ndash;codesheep
-win10结尾crlf是否替代为linux结尾lf
-添加数学公式
-原理 Hugo Hugo 是一个用 Go 编写的静态网站生成器
+hugo &#43; GitHub Page(win11) hugo &#43; GitHub Page(mac) &ndash;codesheep win10结尾crlf是否替代为linux结尾lf 添加数学公式 目录 原理 日常使用 参数说明 原理 Hugo Hugo 是一个用 Go 编写的静态网站生成器
 Hugo把用户提供的数据文件、i18n 包、配置、布局模板、静态文件，以及用 Markdown 编写的内容，处理并生成一个完整的静态网站。较出色的功能包括多语言支持、图像处理、定制输出格式、短代码等等。而 Hugo 的“嵌套分部”(Nested sections) 功能则可以隔离不同类型的内容，例如一个同时包含博客和播客的网站。
 &mdash;&mdash;&ndash;wikipedia
-个人使用上，
-就是把markdown转换为一个html。
-把各个html安装目录组织成目录html。
-Github page 联合 " />
+个人使用上，就是把markdown转换为一个html。把各个html安装目录组织成目录html。
+Github page Github page会把目录下的html以静态页面的方式显示出来，在这个应用场景下我们通过hugo框架将markdown转换为html，并生成相应的目录结构，所有生成的html在docs目录下，在github repository的settings -&gt; Pages中，把GitHub Pages Source改为docs目录，点击save保存即可。
+日常使用 根目录执行 hugo new &#34;posts/hello.md&#34; hugo new &#34;about/_index.md&#34; 本地运行 本地打开http://localhost:1313/,其中-D参数表示看到文件中&amp;draft=true&amp;的内容 hugo server -D 生成发布目录 hugo -t m10c 发布到github git add . git commit -m &#34;...&#34; git push 参数说明 draft : 是否是草稿，默认是true，草稿在发布时不会显示出来，可以通过加上hugo server -D参数来显示草稿 math: 是否支持数学公式，默认是false tags: 标签，多个标签之间用逗号分隔 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dilint.github.io/posts/set_up_blog/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-09-20T13:21:45+08:00" />
@@ -84,7 +75,6 @@ Github page 联合 " />
       
   <article class="post">
     <header class="post-header">
-      
       <h1 class ="post-title">Set Up Blog</h1>
       <div class="post-meta">
         <div>
@@ -113,12 +103,20 @@ Github page 联合 " />
       </div>
     </header>
     <div class="post-content">
-      <p>系统：win11</p>
-<p>参考内容：</p>
-<p><a href="https://www.jianshu.com/p/cc73559fea2c">hugo + GitHub Page(win11)</a></p>
-<p><a href="https://www.bilibili.com/video/BV1q4411i7gL/?spm_id_from=333.1007.top_right_bar_window_history.content.click&amp;vd_source=76501560d60e3e64d15a0b344c7d1028">hugo + GitHub Page(mac) &ndash;codesheep</a></p>
-<p><a href="https://qing.shuncs.com/post/tech/hugo/">win10结尾crlf是否替代为linux结尾lf</a></p>
-<p><a href="https://note.qidong.name/2018/03/hugo-mathjax/">添加数学公式</a></p>
+      <p><strong>系统：win11</strong></p>
+<p><strong>参考内容：</strong></p>
+<ul>
+<li><a href="https://www.jianshu.com/p/cc73559fea2c">hugo + GitHub Page(win11)</a></li>
+<li><a href="https://www.bilibili.com/video/BV1q4411i7gL/?spm_id_from=333.1007.top_right_bar_window_history.content.click&amp;vd_source=76501560d60e3e64d15a0b344c7d1028">hugo + GitHub Page(mac) &ndash;codesheep</a></li>
+<li><a href="https://qing.shuncs.com/post/tech/hugo/">win10结尾crlf是否替代为linux结尾lf</a></li>
+<li><a href="https://note.qidong.name/2018/03/hugo-mathjax/">添加数学公式</a></li>
+</ul>
+<h2 id="目录">目录</h2>
+<ol>
+<li><a href="#%E5%8E%9F%E7%90%86">原理</a></li>
+<li><a href="#%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8">日常使用</a></li>
+<li><a href="#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E">参数说明</a></li>
+</ol>
 <h2 id="原理">原理</h2>
 <h3 id="hugo">Hugo</h3>
 <blockquote>
@@ -126,11 +124,36 @@ Github page 联合 " />
 <p><strong>Hugo</strong>把用户提供的数据文件、i18n 包、配置、布局模板、静态文件，以及用 <a href="https://zh.wikipedia.org/wiki/Markdown" title="Markdown">Markdown</a> 编写的内容，处理并生成一个完整的静态网站。较出色的功能包括多语言支持、图像处理、定制输出格式、短代码等等。而 Hugo 的“嵌套分部”(Nested sections) 功能则可以隔离不同类型的内容，例如一个同时包含博客和播客的网站。</p>
 <p>&mdash;&mdash;&ndash;wikipedia</p>
 </blockquote>
-<p>个人使用上，</p>
-<p>就是把markdown转换为一个html。</p>
-<p>把各个html安装目录组织成目录html。</p>
+<p>个人使用上，就是把markdown转换为一个html。把各个html安装目录组织成目录html。</p>
 <h3 id="github-page">Github page</h3>
-<h3 id="联合">联合</h3>
+<p>Github page会把目录下的html以静态页面的方式显示出来，在这个应用场景下我们通过hugo框架将markdown转换为html，并生成相应的目录结构，所有生成的html在<code>docs</code>目录下，在github repository的<code>settings -&gt; Pages</code>中，把GitHub Pages Source改为<code>docs</code>目录，点击save保存即可。</p>
+<h2 id="日常使用">日常使用</h2>
+<ol>
+<li>根目录执行</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new <span style="color:#e6db74">&#34;posts/hello.md&#34;</span>
+</span></span><span style="display:flex;"><span>hugo new <span style="color:#e6db74">&#34;about/_index.md&#34;</span>
+</span></span></code></pre></div><ol start="2">
+<li>本地运行
+本地打开http://localhost:1313/,其中-D参数表示看到文件中&amp;draft=true&amp;的内容</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div><ol start="3">
+<li>生成发布目录</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo -t m10c
+</span></span></code></pre></div><ol start="4">
+<li>发布到github</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;...&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><h2 id="参数说明">参数说明</h2>
+<ul>
+<li>draft : 是否是草稿，默认是true，草稿在发布时不会显示出来，可以通过加上<code>hugo server -D</code>参数来显示草稿</li>
+<li>math: 是否支持数学公式，默认是false</li>
+<li>tags: 标签，多个标签之间用逗号分隔</li>
+</ul>
 
     </div>
     <div class="post-footer">
