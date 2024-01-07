@@ -77,7 +77,7 @@
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          1 min read
+          2 min read
         </div>
         <div>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
@@ -130,14 +130,14 @@
 </span></span></code></pre></div><h3 id="收敛位置证明-leetcode35">收敛位置证明 leetcode35</h3>
 <p><a href="https://leetcode.cn/problems/search-insert-position/description/">leetcode35.搜索插入位置</a>。针对该问题，在搜索失败时收敛到哪个位置值得探讨。</p>
 <p><strong>证明问题</strong> 递增序列，采用<strong>左闭右开</strong>二分搜索，如果没有搜索到<code>target</code>，<code>right</code>的位置为<code>target</code>应该插入的位置。（其中<code>left，right</code>分别为左右区间下标；<code>target</code>为目标值，<code>nums</code>为序列）</p>
-<p><strong>证明过程</strong>
-为了证明方便，首先我们初始化<code>nums[right] == inf</code>，在证明结论二，三中使用到。</p>
+<p><strong>证明过程</strong> 为了证明方便，首先我们初始化<code>nums[right] == inf</code>，在证明结论二，三中使用到。</p>
 <ol>
 <li>结论一，在目标搜索不到情况下，退出循环的时候，<code>left == right</code>。假设退出循环<code>left &gt; right</code>，则只可能通过上一步<code>left = mid+1</code>，则需要&rsquo;mid &gt;= right&rsquo;。但事实上由于<code>mid = (left + right) // 2</code>，并且进入循环<code>left &lt; right</code>，所以<code>mid &lt; right</code>，与<code>mid &gt;= right</code>矛盾，所以假设不成立。</li>
 <li>结论二，在收敛过程中，<code>nums[right] &gt; target</code>永远满足，已知一开始<code>nums[right] &gt; target</code>，right在收敛过程中，使用表达式<code>right = mid</code>更新，且更新条件为<code>nums[mid] &gt; target</code>，所以<code>nums[right] &gt; target</code>永远满足。</li>
-<li>结论三，在目标搜索不到情况下，<code>nums[right]</code>为第一个大于<code>target</code>的数。假设在<code>right</code>前面还存在比<code>nums[right]</code>小，但是大于<code>target</code>的数，则<code>nums[right-1] &gt; target</code>。根据结论一，可知退出循环的时候<code>left == right</code>， 则在上一轮循环，执行了<code>left(right) = mid + 1 -&gt; mid = right - 1</code> ，且执行条件为<code>nums[mid] &lt; target -&gt; nums[right-1] &lt; target</code>，与假设相矛盾，故假设不成立。</li>
-<li>结论四，在目标搜索不到情况下，退出循环的时候，right的位置为target应该插入的位置。根据结论二和结论三，可得结论四成立。</li>
+<li>结论三，在目标搜索不到情况下，<code>nums[right]</code>为第一个大于<code>target</code>的数。根据结论二，已知<code>nums[right] &gt; target</code>，假设在<code>right</code>前面还存在比<code>nums[right]</code>小，但是大于<code>target</code>的数，则<code>nums[right-1] &gt; target</code>。根据结论一，可知退出循环的时候<code>left == right</code>， 则在上一轮循环，执行了<code>left(right) = mid + 1 -&gt; mid = right - 1</code> ，且执行条件为<code>nums[mid] &lt; target -&gt; nums[right-1] &lt; target</code>，与假设相矛盾，故假设不成立。</li>
+<li>结论四，在目标搜索不到情况下，退出循环的时候，right的位置为target应该插入的位置。根据结论三，可得结论四成立。</li>
 </ol>
+<p><strong>不严谨证明</strong> （该证明不一定正确）上面的证明尽管成立，但是比较繁琐，对于实际使用不太友好。根据二分搜索，如果<code>target</code>存在于<code>nums</code>中，则会找到目标位置，否则在大多数情况下退出循环前的最后一个或两个迭代中<code>left</code>和<code>right</code>分别为第一个小于<code>target</code>的位置和第一个大于<code>target</code>的位置。因此在左闭右开情况下，<code>mid = left -&gt; nums[mid] &lt; target</code>,最后会执行<code>left = mid + 1 -&gt; left = right</code>，left和right位置为target应该插入的位置。而在<strong>左闭右闭</strong>情况下，最后会执行<code>left = mid -&gt; left = right + 1</code>，right位置为target应该插入的位置。而在<strong>左闭右闭</strong>情况下，由于<code>mid = left -&gt; nums[mid] &lt; target</code>会执行<code>left = mid + 1 -&gt; left = right</code>，接着由于<code>mid = right -&gt; nums[mid] &gt; target</code>，执行<code>right = mid - 1</code>，所以left和right位置互换，<code>left</code>和<code>right</code>分别为第一个大于<code>target</code>的位置和第一个小于<code>target</code>的位置。</p>
 
     </div>
     <div class="post-footer">
