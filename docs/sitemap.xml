@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dilint.github.io/tags/algorithm/</loc>
+    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/tags/leetcode/</loc>
+    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/posts/leetcode_array/</loc>
+    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/posts/</loc>
+    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/tags/</loc>
+    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
+  </url><url>
+    <loc>https://dilint.github.io/</loc>
+    <lastmod>2024-01-07T17:57:04+08:00</lastmod>
+  </url><url>
     <loc>https://dilint.github.io/tags/docker/</loc>
     <lastmod>2023-09-22T21:00:30+08:00</lastmod>
   </url><url>
     <loc>https://dilint.github.io/tags/install/</loc>
     <lastmod>2023-09-22T21:00:30+08:00</lastmod>
   </url><url>
-    <loc>https://dilint.github.io/posts/</loc>
-    <lastmod>2023-09-22T21:00:30+08:00</lastmod>
-  </url><url>
     <loc>https://dilint.github.io/posts/set_up_docker/</loc>
-    <lastmod>2023-09-22T21:00:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dilint.github.io/tags/</loc>
-    <lastmod>2023-09-22T21:00:30+08:00</lastmod>
-  </url><url>
-    <loc>https://dilint.github.io/</loc>
     <lastmod>2023-09-22T21:00:30+08:00</lastmod>
   </url><url>
     <loc>https://dilint.github.io/tags/assignment/</loc>

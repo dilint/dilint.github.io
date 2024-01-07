@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Leetcode Array // Wells Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wells" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode Array"/>
+<meta name="twitter:description" content="Leetcode Array 目录 二分 收敛位置证明 leetcode35 二分 Template
+# 左闭右开 def search(self, nums: List[int], target: int) -&gt; int: left, right = 0, len(nums) while left &lt; right: mid = left &#43; (right - left) // 2 if nums[mid] &gt; target: right = mid elif nums[mid] &lt; target: left = mid &#43; 1 else: return mid return -1 # 左闭右闭 def search(self, nums: List[int], target: int) -&gt; int: left , right = 0, len(nums) - 1 while left &lt;= right: mid = left &#43; (right - left) // 2 if nums[mid] &gt; target: right = mid - 1 elif nums[mid] &lt; target: left = mid &#43; 1 else: return mid return -1 收敛位置证明 leetcode35 leetcode35."/>
+
+    <meta property="og:title" content="Leetcode Array" />
+<meta property="og:description" content="Leetcode Array 目录 二分 收敛位置证明 leetcode35 二分 Template
+# 左闭右开 def search(self, nums: List[int], target: int) -&gt; int: left, right = 0, len(nums) while left &lt; right: mid = left &#43; (right - left) // 2 if nums[mid] &gt; target: right = mid elif nums[mid] &lt; target: left = mid &#43; 1 else: return mid return -1 # 左闭右闭 def search(self, nums: List[int], target: int) -&gt; int: left , right = 0, len(nums) - 1 while left &lt;= right: mid = left &#43; (right - left) // 2 if nums[mid] &gt; target: right = mid - 1 elif nums[mid] &lt; target: left = mid &#43; 1 else: return mid return -1 收敛位置证明 leetcode35 leetcode35." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dilint.github.io/posts/leetcode_array/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-07T17:57:04+08:00" />
+<meta property="article:modified_time" content="2024-01-07T17:57:04+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://dilint.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Wells" /></a>
+      <span class="app-header-title">Wells Blog</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Stay foolish, keep calm</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/dilint" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/wells34830282" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Leetcode Array</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 7, 2024
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://dilint.github.io/tags/algorithm/">algorithm</a>
+              <a class="tag" href="https://dilint.github.io/tags/leetcode/">leetcode</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="leetcode-array">Leetcode Array</h1>
+<h2 id="目录">目录</h2>
+<ul>
+<li><a href="#%E4%BA%8C%E5%88%86">二分</a>
+<ul>
+<li><a href="#%E6%94%B6%E6%95%9B%E4%BD%8D%E7%BD%AE%E8%AF%81%E6%98%8E-leetcode35">收敛位置证明 leetcode35</a></li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h2 id="二分">二分</h2>
+<p><strong>Template</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 左闭右开</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(self, nums: List[int], target: int) <span style="color:#f92672">-&gt;</span> int:
+</span></span><span style="display:flex;"><span>    left, right <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, len(nums)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> left <span style="color:#f92672">&lt;</span> right:
+</span></span><span style="display:flex;"><span>        mid <span style="color:#f92672">=</span> left <span style="color:#f92672">+</span> (right <span style="color:#f92672">-</span> left) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&gt;</span> target:
+</span></span><span style="display:flex;"><span>            right <span style="color:#f92672">=</span> mid
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> nums[mid] <span style="color:#f92672">&lt;</span> target:
+</span></span><span style="display:flex;"><span>            left <span style="color:#f92672">=</span> mid <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> mid
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 左闭右闭</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search</span>(self, nums: List[int], target: int) <span style="color:#f92672">-&gt;</span> int:
+</span></span><span style="display:flex;"><span>    left , right <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, len(nums) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> left <span style="color:#f92672">&lt;=</span> right:
+</span></span><span style="display:flex;"><span>        mid <span style="color:#f92672">=</span> left <span style="color:#f92672">+</span> (right <span style="color:#f92672">-</span> left) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> nums[mid] <span style="color:#f92672">&gt;</span> target:
+</span></span><span style="display:flex;"><span>            right <span style="color:#f92672">=</span> mid <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> nums[mid] <span style="color:#f92672">&lt;</span> target:
+</span></span><span style="display:flex;"><span>            left <span style="color:#f92672">=</span> mid <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> mid
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h3 id="收敛位置证明-leetcode35">收敛位置证明 leetcode35</h3>
+<p><a href="https://leetcode.cn/problems/search-insert-position/description/">leetcode35.搜索插入位置</a>。针对该问题，在搜索失败时收敛到哪个位置值得探讨。</p>
+<p><strong>证明问题</strong> 递增序列，采用<strong>左闭右开</strong>二分搜索，如果没有搜索到<code>target</code>，<code>right</code>的位置为<code>target</code>应该插入的位置。（其中<code>left，right</code>分别为左右区间下标；<code>target</code>为目标值，<code>nums</code>为序列）</p>
+<p><strong>证明过程</strong>
+为了证明方便，首先我们初始化<code>nums[right] == inf</code>，在证明结论二，三中使用到。</p>
+<ol>
+<li>结论一，在目标搜索不到情况下，退出循环的时候，<code>left == right</code>。假设退出循环<code>left &gt; right</code>，则只可能通过上一步<code>left = mid+1</code>，则需要&rsquo;mid &gt;= right&rsquo;。但事实上由于<code>mid = (left + right) // 2</code>，并且进入循环<code>left &lt; right</code>，所以<code>mid &lt; right</code>，与<code>mid &gt;= right</code>矛盾，所以假设不成立。</li>
+<li>结论二，在收敛过程中，<code>nums[right] &gt; target</code>永远满足，已知一开始<code>nums[right] &gt; target</code>，right在收敛过程中，使用表达式<code>right = mid</code>更新，且更新条件为<code>nums[mid] &gt; target</code>，所以<code>nums[right] &gt; target</code>永远满足。</li>
+<li>结论三，在目标搜索不到情况下，<code>nums[right]</code>为第一个大于<code>target</code>的数。假设在<code>right</code>前面还存在比<code>nums[right]</code>小，但是大于<code>target</code>的数，则<code>nums[right-1] &gt; target</code>。根据结论一，可知退出循环的时候<code>left == right</code>， 则在上一轮循环，执行了<code>left(right) = mid + 1 -&gt; mid = right - 1</code> ，且执行条件为<code>nums[mid] &lt; target -&gt; nums[right-1] &lt; target</code>，与假设相矛盾，故假设不成立。</li>
+<li>结论四，在目标搜索不到情况下，退出循环的时候，right的位置为target应该插入的位置。根据结论二和结论三，可得结论四成立。</li>
+</ol>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Wells Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 21:00:30 +0800</lastBuildDate><atom:link href="https://dilint.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jan 2024 17:57:04 +0800</lastBuildDate><atom:link href="https://dilint.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode Array</title>
+      <link>https://dilint.github.io/posts/leetcode_array/</link>
+      <pubDate>Sun, 07 Jan 2024 17:57:04 +0800</pubDate>
+      
+      <guid>https://dilint.github.io/posts/leetcode_array/</guid>
+      <description>Leetcode Array 目录 二分 收敛位置证明 leetcode35 二分 Template
+# 左闭右开 def search(self, nums: List[int], target: int) -&amp;gt; int: left, right = 0, len(nums) while left &amp;lt; right: mid = left + (right - left) // 2 if nums[mid] &amp;gt; target: right = mid elif nums[mid] &amp;lt; target: left = mid + 1 else: return mid return -1 # 左闭右闭 def search(self, nums: List[int], target: int) -&amp;gt; int: left , right = 0, len(nums) - 1 while left &amp;lt;= right: mid = left + (right - left) // 2 if nums[mid] &amp;gt; target: right = mid - 1 elif nums[mid] &amp;lt; target: left = mid + 1 else: return mid return -1 收敛位置证明 leetcode35 leetcode35.</description>
+    </item>
+    
     <item>
       <title>Set Up Docker</title>
       <link>https://dilint.github.io/posts/set_up_docker/</link>
