@@ -2,6 +2,8 @@
 title = 'Imgs 2024 winter vacation'
 date = 2024-02-21T11:42:36+08:00
 draft = false
+tags = ["imgs", "life"]
+
 +++
 
 # 2024年寒假
